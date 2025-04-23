@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experiment-2</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    h3 {
+      margin-bottom: 30px;
+      font-weight: 400;
+      color: #555;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 5px;
+      text-align: left;
+      color: #444;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #output {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Simple Age Group Calculator</h2>
+    <h3>Yash Chikhale : D10C - 20</h3>
+
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" placeholder="Your name here" />
+
+    <label for="age">Enter your age:</label>
+    <input type="number" id="age" placeholder="Your age here" />
+
+    <button id="submitBtn">Submit</button>
+
+    <p id="output"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
